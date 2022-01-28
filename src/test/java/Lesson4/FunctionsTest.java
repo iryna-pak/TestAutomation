@@ -82,7 +82,7 @@ public class FunctionsTest {
         assumeTrue(1 == 2);
         assertTrue(false);
     }
-
+/*
     @Test
     void assertAllTest() {
         assertAll(
@@ -90,6 +90,8 @@ public class FunctionsTest {
                 () -> assertFalse(true)
         );
     }
+
+ */
 
     @AfterEach
     void afterEach() {
