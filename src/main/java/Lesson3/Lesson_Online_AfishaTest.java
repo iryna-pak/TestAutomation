@@ -22,6 +22,7 @@ public class Lesson_Online_AfishaTest {
         //loginButton.click();
         driver.findElement(By.xpath("//button[.='Войти']")).click();
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@src, 'login')]")));
+        //driver.switchTo().parentFrame(); - если фрэйм не закрылся автоматически, возвращаемся назад с помощью driver.switchTo().parentFrame()
         //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login")));
         driver.findElement(By.id("login")).sendKeys("spartalex1993");
