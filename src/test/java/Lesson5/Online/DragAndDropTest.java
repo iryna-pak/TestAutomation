@@ -1,4 +1,4 @@
-package Lesson5_Online;
+package Lesson5.Online;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;

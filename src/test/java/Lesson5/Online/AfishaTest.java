@@ -1,4 +1,4 @@
-package Lesson5_Online;
+package Lesson5.Online;
 
 import org.junit.jupiter.api.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
