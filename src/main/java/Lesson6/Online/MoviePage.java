@@ -31,7 +31,7 @@ public class MoviePage extends BasePage {
 
     public MoviePage checkFilmAddedToFavourites() {
         webDriverWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(ADDED_TO_FAV_XPATH_LOCATOR)));
-        assertThat(addedToFavouritesElement, isDisplayed());
+        assertThat(addedToFavouritesElement, isDisplayed()); // Проверка, что элемент показывается
         return this;
     }
 }

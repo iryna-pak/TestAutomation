@@ -43,7 +43,7 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public MainPage clickLoginButton() {
+    public MainPage clickLoginButton() {    // Возврат той страницы, на которой мы окажемся после этого действия
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

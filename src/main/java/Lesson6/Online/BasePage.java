@@ -16,7 +16,8 @@ public class BasePage {
         this.driver = driver;
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
         actions = new Actions(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(driver, this); // Каждый раз обращаясь к элементы на странице, PageFactory заново его инициализирует.
+        // Это нужно для актуального состояния нахождения элемента
     }
 
 }
